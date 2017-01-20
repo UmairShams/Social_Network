@@ -49,8 +49,12 @@ class FeedVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let post = posts[indexPath.row]
-        print("Hey umair:\(post.captian)")
-        return tableview.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+        if let cell = tableview.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell{
+            cell.ConfigureCell(post: post)
+            return cell
+        }else{
+            return PostCell()
+        }
     }
     
     @IBAction func sigoutPressed(_ sender: Any) {
