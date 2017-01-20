@@ -16,6 +16,7 @@
 		1119119A1E2A159C004A1CA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 111911991E2A159C004A1CA8 /* GoogleService-Info.plist */; };
 		1141E4F61E2F0653004E6913 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141E4F51E2F0653004E6913 /* CircleView.swift */; };
 		1141E4F81E2FDB65004E6913 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141E4F71E2FDB65004E6913 /* PostCell.swift */; };
+		11994CED1E3280ED00FCC0E0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11994CEC1E3280ED00FCC0E0 /* DataService.swift */; };
 		11A2BC3F1E2C0E980039AA54 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2BC3E1E2C0E980039AA54 /* FancyView.swift */; };
 		11A2BC421E2C0FF40039AA54 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2BC411E2C0FF40039AA54 /* Constants.swift */; };
 		11A2BC441E2C130F0039AA54 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2BC431E2C130F0039AA54 /* RoundButton.swift */; };
@@ -36,6 +37,7 @@
 		111911991E2A159C004A1CA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1141E4F51E2F0653004E6913 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		1141E4F71E2FDB65004E6913 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		11994CEC1E3280ED00FCC0E0 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		11A2BC3E1E2C0E980039AA54 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		11A2BC411E2C0FF40039AA54 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11A2BC431E2C130F0039AA54 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		111911861E2A14B7004A1CA8 /* Social_Network */ = {
 			isa = PBXGroup;
 			children = (
+				11994CEB1E3280C100FCC0E0 /* Services */,
 				11A2BC401E2C0FB90039AA54 /* Util */,
 				1119119D1E2A1885004A1CA8 /* Model */,
 				1119119C1E2A187F004A1CA8 /* View */,
@@ -120,6 +123,14 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		11994CEB1E3280C100FCC0E0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				11994CEC1E3280ED00FCC0E0 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		11A2BC401E2C0FB90039AA54 /* Util */ = {
@@ -277,6 +288,7 @@
 				1119118A1E2A14B7004A1CA8 /* SigninVC.swift in Sources */,
 				11A2BC441E2C130F0039AA54 /* RoundButton.swift in Sources */,
 				11A2BC481E2C18C50039AA54 /* FancyButton.swift in Sources */,
+				11994CED1E3280ED00FCC0E0 /* DataService.swift in Sources */,
 				1103ABB81E2D51F600FDD488 /* FeedVC.swift in Sources */,
 				111911881E2A14B7004A1CA8 /* AppDelegate.swift in Sources */,
 				11A2BC3F1E2C0E980039AA54 /* FancyView.swift in Sources */,
